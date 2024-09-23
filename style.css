@@ -1,6 +1,7 @@
 .bgpic {
-    background-image: url(./pictures/movie\ background.jfif);
-    background-repeat: repeat;
+    background-image: url(./pictures/background.jpg);
+    /* background-image: url(./pictures/background_2.jfif); */
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    object-fit: cover;
+    background-size: cover;
 }
