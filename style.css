@@ -1,0 +1,6 @@
+.bgpic {
+    background-image: url(./pictures/movie\ background.jfif);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+}
