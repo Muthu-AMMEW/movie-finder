@@ -25,7 +25,7 @@ search.addEventListener('keyup', () => {
 
 searchBtn.addEventListener('click', async() =>
     await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=fe605b0b&s=${searchValue}`)
-        .then((res) => res.json())
+        .then(async (res) => await res.json())
         .then((data) => {
             dataArray = [];
             movieDetails = ''; //helps to clear previous search result while next search.
@@ -45,7 +45,7 @@ searchBtn.addEventListener('click', async() =>
 
 function titleNames(data) {
     fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=fe605b0b&t=${data.Title}`)
-        .then(res => res.json())
+        .then(async (res) => await res.json())
         .then((dataTitle => {
             movieDetails += `<div class="col-md-6 col-lg-4 mb-3">
                                 <div class="card">
