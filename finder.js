@@ -24,7 +24,7 @@ search.addEventListener('keyup', () => {
 })
 
 searchBtn.addEventListener('click', async() =>
-    await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=fe605b0b&s=${searchValue}`)
+    await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=fe605b0b&s=${searchValue}`)
         .then(async (res) => await res.json())
         .then((data) => {
             dataArray = [];
@@ -44,7 +44,7 @@ searchBtn.addEventListener('click', async() =>
 )
 
 function titleNames(data) {
-    fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=fe605b0b&t=${data.Title}`)
+    fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=fe605b0b&t=${data.Title}`)
         .then(async (res) => await res.json())
         .then((dataTitle => {
             movieDetails += `<div class="col-md-6 col-lg-4 mb-3">
